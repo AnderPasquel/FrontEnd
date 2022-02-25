@@ -1,0 +1,16 @@
+<section class="login">
+    <form [formGroup]="loginForm" class="loginform">
+      <h1 class="title">Iniciar sesión</h1>
+      <mat-form-field class="formfield">
+        <input matInput placeholder="Nombre de usuario" formControlName="usuario" required>     
+      </mat-form-field>
+      <mat-form-field class="formfield">
+        <input matInput placeholder="Contraseña" type="password" formControlName="contrasena" required>    
+      </mat-form-field> 
+      <div class="btn">
+        <div class="btnsubmit" (click)="onLogin()">
+          <span class="label">Entrar</span>
+        </div>
+      </div>
+    </form>
+  </section>

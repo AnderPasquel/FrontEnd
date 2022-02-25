@@ -1,0 +1,53 @@
+.login {
+    display: flex;
+    justify-content: center;
+
+    .loginform {
+        max-width: 300px;
+        width: 100%;
+
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .formfield {
+            width: 100%;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+            text-align: center;
+
+            .btn__submit {
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+                cursor: pointer;
+
+                background-color: rgba(0, 0, 0, 0.25);
+
+                display: flex;
+
+                &:hover {
+                    box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.5);
+                    background-color: teal;
+                    color: #fff;
+                    transform: scale(1.2);
+                    border-radius: 0;
+                }
+
+                .label {
+                    margin: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}
